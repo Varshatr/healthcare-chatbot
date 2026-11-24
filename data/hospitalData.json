@@ -1,0 +1,585 @@
+{
+  "hospitalInfo": {
+    "name": "Apex Care Super Specialty Hospital",
+    "tagline": "Compassionate Care, Advanced Clinical Excellence",
+    "emergencyNumber": "108 / +1 (800) 467-7482",
+    "ambulanceNumber": "+1 (800) 999-0108",
+    "generalEnquiry": "+1 (800) 467-7000",
+    "email": "helpdesk@apexcarehospital.org",
+    "opdEmail": "appointments@apexcarehospital.org",
+    "address": {
+      "street": "450 Health Sciences Boulevard, Medical District",
+      "city": "Metropolis",
+      "state": "NY",
+      "postalCode": "10016",
+      "landmark": "Near Central Metro Station & City Green Park"
+    },
+    "generalVisitingHours": "10:00 AM - 1:00 PM & 4:30 PM - 7:30 PM (Daily)",
+    "opdHours": "Monday to Saturday: 8:00 AM - 8:00 PM | Sunday: 9:00 AM - 1:00 PM",
+    "emergencyHours": "24 Hours / 7 Days a Week (Always Open)"
+  },
+  "departments": [
+    {
+      "id": "cardiology",
+      "name": "Cardiology & Cardiac Surgery",
+      "icon": "HeartPulse",
+      "shortDescription": "24/7 Primary Angioplasty, heart failure clinic, and advanced cardiothoracic surgeries.",
+      "fullDescription": "Our Department of Cardiology and Cardiac Surgery is internationally recognized for exceptional outcomes in complex coronary interventions, pediatric heart surgeries, minimally invasive valve repair, and rhythm disorder treatments.",
+      "headOfDepartment": "Dr. Evelyn Vance, MD, FACC",
+      "location": "Tower A, 3rd Floor",
+      "phoneExtension": "Ext. 2101",
+      "opdTimings": "Mon - Sat: 9:00 AM - 5:00 PM",
+      "commonProcedures": [
+        "Coronary Angiography & Stenting",
+        "2D & 3D Echocardiography",
+        "Pacemaker & ICD Implantation",
+        "Off-Pump Coronary Artery Bypass (CABG)",
+        "Heart Valve Repair & Replacement"
+      ],
+      "bedsCount": 65
+    },
+    {
+      "id": "neurology",
+      "name": "Neurology & Neurosurgery",
+      "icon": "Brain",
+      "shortDescription": "Comprehensive management of stroke, epilepsy, spine trauma, and neuro-oncology.",
+      "fullDescription": "Equipped with advanced Bi-Plane Neuro-Cath Lab, stereotactic navigation, and dedicated Neuro-ICU for acute stroke thrombolysis, brain tumors, spine stabilization, and Parkinson's management.",
+      "headOfDepartment": "Dr. Marcus Thorne, MS, MCh (Neurosurgery)",
+      "location": "Tower B, 4th Floor",
+      "phoneExtension": "Ext. 2202",
+      "opdTimings": "Mon - Sat: 8:30 AM - 4:30 PM",
+      "commonProcedures": [
+        "Acute Ischemic Stroke Thrombolysis",
+        "Microscopic Brain Tumor Resection",
+        "Minimally Invasive Spine Surgery",
+        "Deep Brain Stimulation (DBS)",
+        "Video EEG & Epilepsy Monitoring"
+      ],
+      "bedsCount": 50
+    },
+    {
+      "id": "orthopedics",
+      "name": "Orthopedics & Joint Replacement",
+      "icon": "Bone",
+      "shortDescription": "Robotic knee & hip replacements, complex trauma care, and sports medicine rehabilitation.",
+      "fullDescription": "Specialized in robotic-assisted joint replacement, arthroscopic ligament reconstructions, pediatric deformity corrections, and high-velocity trauma fracture surgeries with fast-track recovery protocols.",
+      "headOfDepartment": "Dr. Sarah Jenkins, MS (Ortho), FRCS",
+      "location": "Tower A, 2nd Floor",
+      "phoneExtension": "Ext. 2303",
+      "opdTimings": "Mon - Sat: 9:00 AM - 6:00 PM",
+      "commonProcedures": [
+        "Robotic Total Knee Replacement",
+        "Total Hip Replacement (Anterior Approach)",
+        "Arthroscopic ACL/PCL Reconstruction",
+        "Complex Pelvic & Acetabular Trauma Care",
+        "Spinal Fusion & Disc Decompression"
+      ],
+      "bedsCount": 60
+    },
+    {
+      "id": "pediatrics",
+      "name": "Pediatrics & Neonatology",
+      "icon": "Baby",
+      "shortDescription": "Level-III NICU & PICU, pediatric subspecialties, and developmental assessment.",
+      "fullDescription": "Dedicated child-friendly wing offering 24/7 pediatric emergency coverage, extreme prematurity care, pediatric surgery, developmental therapy, and routine vaccinations in a comforting environment.",
+      "headOfDepartment": "Dr. Ananya Roy, MD (Pediatrics), DNB, FIAP",
+      "location": "Tower C, 1st Floor",
+      "phoneExtension": "Ext. 2404",
+      "opdTimings": "Mon - Sun: 8:00 AM - 7:00 PM",
+      "commonProcedures": [
+        "Advanced Neonatal Intensive Care (Level III)",
+        "Pediatric Intensive Care & Ventilation",
+        "Childhood Immunization & Growth Tracking",
+        "Pediatric Bronchoscopy & Allergy Clinic",
+        "Congenital Anomaly Surgical Repairs"
+      ],
+      "bedsCount": 45
+    },
+    {
+      "id": "oncology",
+      "name": "Oncology & Cancer Center",
+      "icon": "Activity",
+      "shortDescription": "Medical oncology, radiation therapy with LINAC, and organ-preserving surgical oncology.",
+      "fullDescription": "Multidisciplinary Tumor Board providing personalized precision oncology, target chemotherapy suites, immunotherapy, PET-CT diagnostics, and compassionate palliative support.",
+      "headOfDepartment": "Dr. Robert Chen, MD, DM (Medical Oncology)",
+      "location": "Tower D, Ground & 1st Floor",
+      "phoneExtension": "Ext. 2505",
+      "opdTimings": "Mon - Fri: 9:00 AM - 5:00 PM",
+      "commonProcedures": [
+        "Daycare Precision Chemotherapy",
+        "Intensity-Modulated Radiation Therapy (IMRT)",
+        "Breast Conservation & Reconstructive Surgery",
+        "Laparoscopic GI Oncology Procedures",
+        "Palliative Care & Pain Clinic"
+      ],
+      "bedsCount": 55
+    },
+    {
+      "id": "gastroenterology",
+      "name": "Gastroenterology & GI Surgery",
+      "icon": "ShieldAlert",
+      "shortDescription": "Endoscopy, liver transplant services, and advanced laparoscopic abdominal surgeries.",
+      "fullDescription": "Equipped with state-of-the-art endoscopy suites offering ERCP, EUS, capsule endoscopy, viral hepatitis treatment, and complex hepatobiliary surgeries.",
+      "headOfDepartment": "Dr. David Alverez, MD, DM (Gastro)",
+      "location": "Tower B, 2nd Floor",
+      "phoneExtension": "Ext. 2606",
+      "opdTimings": "Mon - Sat: 9:30 AM - 5:30 PM",
+      "commonProcedures": [
+        "Diagnostic & Therapeutic Endoscopy/Colonoscopy",
+        "Endoscopic Retrograde Cholangiopancreatography (ERCP)",
+        "Endoscopic Ultrasound (EUS)",
+        "Minimally Invasive Gallbladder Surgery",
+        "Liver Cirrhosis & Fatty Liver Protocol"
+      ],
+      "bedsCount": 40
+    },
+    {
+      "id": "nephrology",
+      "name": "Nephrology & Urology",
+      "icon": "Droplet",
+      "shortDescription": "24/7 Hemodialysis unit, kidney transplantation, and laser kidney stone removal.",
+      "fullDescription": "Offers 30-bed modern dialysis center, renal transplant clinic, laser prostate surgeries (HoLEP), reconstructive urology, and pediatric kidney disorders.",
+      "headOfDepartment": "Dr. Priya Sundaram, MD, DM (Nephrology)",
+      "location": "Tower C, 3rd Floor",
+      "phoneExtension": "Ext. 2707",
+      "opdTimings": "Mon - Sat: 8:00 AM - 6:00 PM",
+      "commonProcedures": [
+        "High-Flux Hemodialysis & CRRT",
+        "Living Donor Renal Transplantation",
+        "Laser Lithotripsy for Kidney Stones (RIRS)",
+        "Laser Prostatectomy (HoLEP)",
+        "AV Fistula Creation & Maintenance"
+      ],
+      "bedsCount": 35
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency & Trauma Care",
+      "icon": "Ambulance",
+      "shortDescription": "Level 1 Trauma Center with dedicated resuscitation bays, CT scanner, and ICU.",
+      "fullDescription": "Immediate response protocol for cardiac arrest, polytrauma, stroke, respiratory distress, and acute surgical crises. Supported by advanced mobile ICU ambulances.",
+      "headOfDepartment": "Dr. Jonathan Hayes, MD (Emergency Medicine), FACEP",
+      "location": "Emergency Block, Ground Floor",
+      "phoneExtension": "Ext. 108 / 1000",
+      "opdTimings": "Open 24/7/365 Non-stop",
+      "commonProcedures": [
+        "Advanced Cardiac Life Support (ACLS)",
+        "Immediate Polytrauma Resuscitation",
+        "Emergency Bedside Ultrasonography (FAST)",
+        "Rapid Endotracheal Intubation & Ventilation",
+        "Minor Emergency Surgical Interventions"
+      ],
+      "bedsCount": 40
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-1",
+      "name": "Dr. Evelyn Vance",
+      "title": "Senior Consultant & Head - Cardiology",
+      "departmentId": "cardiology",
+      "departmentName": "Cardiology & Cardiac Surgery",
+      "qualifications": "MBBS, MD (Cardiology), FACC (USA)",
+      "experienceYears": 22,
+      "languages": ["English", "Spanish", "Hindi"],
+      "roomNumber": "OPD 301, Tower A",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opdTimings": "09:00 AM - 01:00 PM & 03:00 PM - 05:00 PM",
+      "consultationFee": "$80 / ₹1,500",
+      "rating": 4.9,
+      "reviewsCount": 420,
+      "bio": "Over 22 years of experience performing complex coronary angioplasties, valve replacements, and leading research on heart failure interventions."
+    },
+    {
+      "id": "doc-2",
+      "name": "Dr. Marcus Thorne",
+      "title": "Director of Neurosurgery",
+      "departmentId": "neurology",
+      "departmentName": "Neurology & Neurosurgery",
+      "qualifications": "MBBS, MS (Gen Surgery), MCh (Neurosurgery), FINR",
+      "experienceYears": 19,
+      "languages": ["English", "German"],
+      "roomNumber": "OPD 402, Tower B",
+      "availableDays": ["Monday", "Wednesday", "Thursday", "Saturday"],
+      "opdTimings": "09:30 AM - 02:00 PM",
+      "consultationFee": "$95 / ₹1,800",
+      "rating": 4.9,
+      "reviewsCount": 310,
+      "bio": "Specialist in microscopic cranial procedures, awake craniotomies, endovascular aneurysm coiling, and robotic-assisted spine surgeries."
+    },
+    {
+      "id": "doc-3",
+      "name": "Dr. Sarah Jenkins",
+      "title": "Chief Orthopedic & Joint Surgeon",
+      "departmentId": "orthopedics",
+      "departmentName": "Orthopedics & Joint Replacement",
+      "qualifications": "MBBS, MS (Ortho), Fellowship in Arthroplasty (UK)",
+      "experienceYears": 17,
+      "languages": ["English", "French"],
+      "roomNumber": "OPD 204, Tower A",
+      "availableDays": ["Tuesday", "Wednesday", "Friday", "Saturday"],
+      "opdTimings": "10:00 AM - 04:00 PM",
+      "consultationFee": "$75 / ₹1,400",
+      "rating": 4.8,
+      "reviewsCount": 285,
+      "bio": "Expert in robotic navigation knee and hip arthroplasty, sports injury ligament repairs, and advanced geriatric fracture care."
+    },
+    {
+      "id": "doc-4",
+      "name": "Dr. Ananya Roy",
+      "title": "Senior Consultant Pediatrician & Neonatologist",
+      "departmentId": "pediatrics",
+      "departmentName": "Pediatrics & Neonatology",
+      "qualifications": "MBBS, MD (Pediatrics), Fellowship in Neonatology (AIIMS)",
+      "experienceYears": 15,
+      "languages": ["English", "Bengali", "Hindi"],
+      "roomNumber": "OPD 108, Tower C",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"],
+      "opdTimings": "08:30 AM - 01:30 PM & 04:00 PM - 06:30 PM",
+      "consultationFee": "$65 / ₹1,100",
+      "rating": 4.9,
+      "reviewsCount": 512,
+      "bio": "Dedicated to child welfare, pediatric immunology, adolescent care, and extreme premature infant intensive care management."
+    },
+    {
+      "id": "doc-5",
+      "name": "Dr. Robert Chen",
+      "title": "Lead Medical Oncologist",
+      "departmentId": "oncology",
+      "departmentName": "Oncology & Cancer Center",
+      "qualifications": "MD, DM (Oncology), ESMO Certified (Switzerland)",
+      "experienceYears": 16,
+      "languages": ["English", "Mandarin"],
+      "roomNumber": "OPD 115, Tower D",
+      "availableDays": ["Monday", "Tuesday", "Thursday", "Friday"],
+      "opdTimings": "10:00 AM - 03:00 PM",
+      "consultationFee": "$90 / ₹1,600",
+      "rating": 4.9,
+      "reviewsCount": 198,
+      "bio": "Specialized in personalized genomic medicine, targeted therapy, immunotherapy, and breast, lung, and GI cancer management."
+    },
+    {
+      "id": "doc-6",
+      "name": "Dr. David Alverez",
+      "title": "Senior Consultant Gastroenterologist",
+      "departmentId": "gastroenterology",
+      "departmentName": "Gastroenterology & GI Surgery",
+      "qualifications": "MBBS, MD, DM (Gastroenterology), FACG",
+      "experienceYears": 18,
+      "languages": ["English", "Spanish"],
+      "roomNumber": "OPD 218, Tower B",
+      "availableDays": ["Monday", "Wednesday", "Thursday", "Friday"],
+      "opdTimings": "09:00 AM - 02:00 PM",
+      "consultationFee": "$70 / ₹1,300",
+      "rating": 4.8,
+      "reviewsCount": 240,
+      "bio": "Expert in therapeutic endoscopy, ERCP, chronic liver disease protocols, inflammatory bowel disease (IBD), and reflux management."
+    },
+    {
+      "id": "doc-7",
+      "name": "Dr. Priya Sundaram",
+      "title": "Head of Nephrology & Dialysis Services",
+      "departmentId": "nephrology",
+      "departmentName": "Nephrology & Urology",
+      "qualifications": "MBBS, MD, DM (Nephrology), FISN",
+      "experienceYears": 14,
+      "languages": ["English", "Tamil", "Hindi"],
+      "roomNumber": "OPD 312, Tower C",
+      "availableDays": ["Tuesday", "Wednesday", "Thursday", "Saturday"],
+      "opdTimings": "08:30 AM - 01:00 PM & 03:00 PM - 05:30 PM",
+      "consultationFee": "$75 / ₹1,400",
+      "rating": 4.8,
+      "reviewsCount": 175,
+      "bio": "Leading expert in renal transplantation, diabetic kidney disease, hemodialysis protocols, and hypertension clinics."
+    },
+    {
+      "id": "doc-8",
+      "name": "Dr. Jonathan Hayes",
+      "title": "Chief of Emergency Medicine",
+      "departmentId": "emergency",
+      "departmentName": "Emergency & Trauma Care",
+      "qualifications": "MBBS, MD (Emergency Medicine), Dip. Critical Care",
+      "experienceYears": 13,
+      "languages": ["English"],
+      "roomNumber": "Emergency Triage Unit",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opdTimings": "24/7 On-Duty Coverage",
+      "consultationFee": "Emergency Triage / Walk-in",
+      "rating": 4.9,
+      "reviewsCount": 630,
+      "bio": "Expert emergency clinician managing acute trauma resuscitation, toxicological crises, and critical disaster readiness."
+    },
+    {
+      "id": "doc-9",
+      "name": "Dr. Maya Patel",
+      "title": "Consultant Interventional Cardiologist",
+      "departmentId": "cardiology",
+      "departmentName": "Cardiology & Cardiac Surgery",
+      "qualifications": "MBBS, MD (Med), DM (Cardiology)",
+      "experienceYears": 11,
+      "languages": ["English", "Gujarati", "Hindi"],
+      "roomNumber": "OPD 304, Tower A",
+      "availableDays": ["Monday", "Wednesday", "Friday", "Saturday"],
+      "opdTimings": "11:00 AM - 04:00 PM",
+      "consultationFee": "$70 / ₹1,300",
+      "rating": 4.7,
+      "reviewsCount": 160,
+      "bio": "Special interest in radial artery coronary interventions, structural heart disease, preventative cardiology, and women's cardiovascular health."
+    },
+    {
+      "id": "doc-10",
+      "name": "Dr. Christopher Lee",
+      "title": "Consultant Neurologist & Stroke Specialist",
+      "departmentId": "neurology",
+      "departmentName": "Neurology & Neurosurgery",
+      "qualifications": "MBBS, MD (Neurology), Stroke Fellowship (Canada)",
+      "experienceYears": 12,
+      "languages": ["English", "Korean"],
+      "roomNumber": "OPD 408, Tower B",
+      "availableDays": ["Tuesday", "Thursday", "Friday", "Saturday"],
+      "opdTimings": "09:00 AM - 01:30 PM",
+      "consultationFee": "$80 / ₹1,500",
+      "rating": 4.8,
+      "reviewsCount": 182,
+      "bio": "Pioneer in acute stroke triage, neuro-rehabilitation, migraine management, and neuropathic pain syndromes."
+    }
+  ],
+  "visitingWards": [
+    {
+      "wardName": "General Inpatient Wards",
+      "hours": "11:00 AM - 1:00 PM & 05:00 PM - 07:30 PM",
+      "rules": "Two visitors permitted at bedside at a time. Passes must be visibly displayed.",
+      "visitorLimit": "Max 2 visitors"
+    },
+    {
+      "wardName": "Intensive Care Units (ICU / CCU / CTVS)",
+      "hours": "12:00 PM - 01:00 PM & 05:00 PM - 06:00 PM",
+      "rules": "One immediate family member permitted. Masks and sterile shoe covers mandatory.",
+      "visitorLimit": "1 visitor at a time"
+    },
+    {
+      "wardName": "Neonatal & Pediatric ICU (NICU / PICU)",
+      "hours": "11:30 AM - 12:30 PM & 05:00 PM - 06:00 PM",
+      "rules": "Parents permitted 24/7 with special pass. Extended family during specified window only.",
+      "visitorLimit": "Parents anytime, 1 guest during slot"
+    },
+    {
+      "wardName": "Maternity & Private Deluxe Suites",
+      "hours": "10:00 AM - 01:00 PM & 04:00 PM - 08:00 PM",
+      "rules": "One registered attendant permitted 24 hours. General visitors within specified hours.",
+      "visitorLimit": "Max 3 visitors"
+    }
+  ],
+  "visitorGuidelines": [
+    "All visitors must register at the Ground Floor Visitor Information Desk to receive a digital or printed pass.",
+    "Children under the age of 12 are strictly not permitted in Critical Care (ICU/CCU) units for infection control.",
+    "Hand hygiene: Sanitize hands at the bedside alcohol dispenser upon entering and leaving patient rooms.",
+    "Quiet Hours are strictly observed hospital-wide between 8:00 PM and 7:00 AM to promote healing.",
+    "Outside cooked meals and flowers are prohibited in clinical areas without clearance from patient's nursing team.",
+    "Apex Care Hospital is a 100% tobacco-free and smoke-free campus.",
+    "Photography or video recording of patients, staff, or medical equipment is strictly prohibited."
+  ],
+  "amenities": [
+    {
+      "name": "24/7 In-House Pharmacy",
+      "description": "Fully stocked pharmacy on the Ground Floor with home delivery and inpatient bedside delivery.",
+      "timing": "24 Hours / 7 Days",
+      "icon": "Pill"
+    },
+    {
+      "name": "The Healing Tree Cafeteria",
+      "description": "Hygienic multi-cuisine dining options, fresh fruit juices, and clinical dietician-approved meals.",
+      "timing": "06:30 AM - 10:30 PM",
+      "icon": "Utensils"
+    },
+    {
+      "name": "Multi-Level Parking & Valet",
+      "description": "500+ car capacity parking lot with 24/7 surveillance, EV charging stations, and free emergency valet.",
+      "timing": "24 Hours / 7 Days",
+      "icon": "Car"
+    },
+    {
+      "name": "Multifaith Prayer & Meditation Room",
+      "description": "Serene and peaceful sanctuary located on Level 2 for contemplation, prayer, and quiet solace.",
+      "timing": "Open 24 Hours",
+      "icon": "Heart"
+    },
+    {
+      "name": "Banking & 24/7 ATMs",
+      "description": "Nationalized & international bank ATMs located near the main entrance lobby.",
+      "timing": "24 Hours / 7 Days",
+      "icon": "DollarSign"
+    },
+    {
+      "name": "Wheelchair & Buggy Assistance",
+      "description": "Dedicated hospitality team providing complimentary transit from parking and entrance to OPD/Wards.",
+      "timing": "24 Hours / 7 Days",
+      "icon": "Accessibility"
+    }
+  ],
+  "insurancePartners": [
+    {
+      "id": "ins-1",
+      "name": "BlueCross BlueShield",
+      "category": "Private Insurance",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 555-0199"
+    },
+    {
+      "id": "ins-2",
+      "name": "UnitedHealthcare",
+      "category": "Private Insurance",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 555-0144"
+    },
+    {
+      "id": "ins-3",
+      "name": "Aetna Health",
+      "category": "Private Insurance",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 555-0188"
+    },
+    {
+      "id": "ins-4",
+      "name": "Cigna Global",
+      "category": "Private Insurance",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 555-0122"
+    },
+    {
+      "id": "ins-5",
+      "name": "Medicare & Medicaid Services",
+      "category": "Government Scheme",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 633-4227"
+    },
+    {
+      "id": "ins-6",
+      "name": "Star Health & Allied Insurance",
+      "category": "TPA Partner",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 425-2255"
+    },
+    {
+      "id": "ins-7",
+      "name": "HDFC ERGO Health",
+      "category": "Private Insurance",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 266-6400"
+    },
+    {
+      "id": "ins-8",
+      "name": "Medi Assist TPA",
+      "category": "TPA Partner",
+      "claimType": "Cashless",
+      "contact": "+1 (800) 425-9449"
+    }
+  ],
+  "cashlessProcessSteps": [
+    {
+      "step": 1,
+      "title": "Hospital Admission & TPA Desk Intimation",
+      "description": "Submit your health insurance policy card, government ID, and doctor admission requisition form at the Cashless Insurance Desk (Tower A, Ground Floor)."
+    },
+    {
+      "step": 2,
+      "title": "Pre-Authorization Form Submission",
+      "description": "Our TPA desk coordinates with your treating doctor to complete the clinical pre-authorization request and transmits it to your insurer within 2 hours."
+    },
+    {
+      "step": 3,
+      "title": "Initial Approval & Hospitalization",
+      "description": "Upon receiving the initial letter of approval from your insurer, the cashless admission process is confirmed without any initial deposit (non-medical expenses excluded)."
+    },
+    {
+      "step": 4,
+      "title": "Final Discharge & Claim Settlement",
+      "description": "At discharge, the hospital sends final itemized bills and discharge summary. Once the insurer authorizes final settlement, patient pays only co-pay or non-covered items."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "Emergency",
+      "question": "What should I do in a medical emergency?",
+      "answer": "Immediately call our 24/7 Emergency Hotline: 108 or +1 (800) 467-7482. Our dispatch team will deploy an advanced cardiac life-support ambulance with a paramedic while preparing the trauma bay for arrival."
+    },
+    {
+      "id": "faq-2",
+      "category": "Appointments",
+      "question": "How can I book an OPD appointment with a specialist?",
+      "answer": "You can book directly on our website via the 'Book Appointment' page, call our central appointment desk at +1 (800) 467-7000, or walk into the Ground Floor Registration Lounge."
+    },
+    {
+      "id": "faq-3",
+      "category": "Visiting",
+      "question": "What are the visiting hours for general wards and ICUs?",
+      "answer": "General Wards: 11:00 AM - 1:00 PM & 5:00 PM - 7:30 PM. ICUs: 12:00 PM - 1:00 PM & 5:00 PM - 6:00 PM (1 visitor only). Please pick up a visitor pass at the main reception."
+    },
+    {
+      "id": "faq-4",
+      "category": "Billing & Insurance",
+      "question": "How does the cashless hospitalization process work?",
+      "answer": "Present your active insurance e-card and photo ID at our Cashless TPA Desk at least 48 hours before planned admission (or within 24 hours for emergency admissions). We handle all insurer approvals directly."
+    },
+    {
+      "id": "faq-5",
+      "category": "Billing & Insurance",
+      "question": "What payment methods are accepted at Apex Care Hospital?",
+      "answer": "We accept all major Credit/Debit Cards (Visa, Mastercard, Amex), UPI/QR Payments, Net Banking, Demand Drafts, Cash, and Direct Insurance Cashless Settlements."
+    },
+    {
+      "id": "faq-6",
+      "category": "General",
+      "question": "Is wheelchair or accessibility assistance available on arrival?",
+      "answer": "Yes. Complimentary wheelchairs, golf buggies, and trained patient escorts are stationed 24/7 at both the Main Entrance and Emergency Portico."
+    }
+  ],
+  "chatbotQuickPrompts": [
+    {
+      "id": "prompt-1",
+      "prompt": "What is the emergency phone number?",
+      "response": "Our 24/7 Emergency & Ambulance line is 108 or +1 (800) 467-7482. We have specialized emergency trauma physicians and mobile ICU units on standby around the clock.",
+      "suggestedAction": {
+        "label": "Call Emergency Now",
+        "href": "tel:108"
+      }
+    },
+    {
+      "id": "prompt-2",
+      "prompt": "What are the hospital visiting hours?",
+      "response": "General Wards: 11:00 AM - 1:00 PM & 5:00 PM - 7:30 PM (max 2 visitors). ICUs: 12:00 PM - 1:00 PM & 5:00 PM - 6:00 PM (1 visitor). Passes are available at the main reception.",
+      "suggestedAction": {
+        "label": "View Full Visitor Guidelines",
+        "href": "/visitor-info"
+      }
+    },
+    {
+      "id": "prompt-3",
+      "prompt": "How do I book a doctor appointment?",
+      "response": "You can select your specialty and preferred doctor on our Book Appointment page, or call our OPD booking line at +1 (800) 467-7000.",
+      "suggestedAction": {
+        "label": "Book an Appointment",
+        "href": "/book-appointment"
+      }
+    },
+    {
+      "id": "prompt-4",
+      "prompt": "Which health insurances are covered?",
+      "response": "We offer cashless treatment with major insurers including BlueCross BlueShield, UnitedHealthcare, Aetna, Cigna, Star Health, and Medicare/Medicaid.",
+      "suggestedAction": {
+        "label": "Check Insurance Partners",
+        "href": "/billing-insurance"
+      }
+    },
+    {
+      "id": "prompt-5",
+      "prompt": "Where is the hospital located?",
+      "response": "Apex Care Hospital is located at 450 Health Sciences Boulevard, Medical District, Metropolis, NY 10016 (Near Central Metro Station).",
+      "suggestedAction": {
+        "label": "Get Directions & Map",
+        "href": "/contact"
+      }
+    }
+  ]
+}
