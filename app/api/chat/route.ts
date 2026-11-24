@@ -55,14 +55,14 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 3. Read API Key from environment (.env.local)
-    const apiKey = process.env.GEMINI_API_KEY?.trim();
+    // 3. Read OpenRouter API Key from environment (.env.local)
+    const apiKey = process.env.OPENROUTER_API_KEY?.trim();
 
     if (!apiKey) {
       return NextResponse.json({
         reply: "I don't have that information, please contact our reception.",
         receptionNumber,
-        warning: "GEMINI_API_KEY is not configured in .env.local.",
+        warning: "OPENROUTER_API_KEY is not configured in .env.local.",
       });
     }
 
@@ -85,56 +85,74 @@ STRICT INSTRUCTIONS & POLICIES:
 ${faqContent}
 --- END FAQ KNOWLEDGE BASE ---`;
 
-    // 5. Send message to Google Gemini API
-    // Candidate models to ensure 100% uptime: starts with user's configured model, then active fallbacks
-    const configuredModel = process.env.GEMINI_MODEL?.trim() || 'gemini-3.5-flash';
+    // 5. Send message to OpenRouter AI API
+    const configuredModel =
+      process.env.OPENROUTER_MODEL?.trim() || 'meta-llama/llama-3.3-70b-instruct';
     const candidateModels = Array.from(
-      new Set([configuredModel, 'gemini-3.5-flash', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'])
+      new Set([
+        configuredModel,
+        'meta-llama/llama-3.3-70b-instruct',
+        'meta-llama/llama-3.1-8b-instruct:free',
+        'deepseek/deepseek-chat',
+      ])
     );
 
     let assistantReply = '';
     let lastError = '';
 
     for (const model of candidateModels) {
-      try {
-        const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-
-        const geminiResponse = await fetch(geminiUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            systemInstruction: {
-              parts: [{ text: systemPrompt }],
+      const maxRetries = 2;
+      for (let attempt = 0; attempt <= maxRetries; attempt++) {
+        try {
+          const openRouterResponse = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${apiKey}`,
+              'HTTP-Referer': 'https://apexcarehospital.org',
+              'X-Title': 'Apex Care Hospital Enquiry Assistant',
             },
-            contents: [
-              {
-                role: 'user',
-                parts: [{ text: userMessage }],
-              },
-            ],
-            generationConfig: {
+            body: JSON.stringify({
+              model,
+              messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: userMessage },
+              ],
               temperature: 0.1,
-              maxOutputTokens: 600,
-            },
-          }),
-        });
+              max_tokens: 600,
+            }),
+          });
 
-        if (geminiResponse.ok) {
-          const data = await geminiResponse.json();
-          assistantReply =
-            data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || '';
-          if (assistantReply) {
-            break; // Successfully got response
+          if (openRouterResponse.ok) {
+            const data = await openRouterResponse.json();
+            assistantReply = data?.choices?.[0]?.message?.content?.trim() || '';
+            if (assistantReply) {
+              break; // Success!
+            }
+          } else {
+            const status = openRouterResponse.status;
+            lastError = `OpenRouter model ${model} returned status ${status}`;
+            console.warn(lastError);
+
+            if ((status === 503 || status === 429) && attempt < maxRetries) {
+              await new Promise((resolve) => setTimeout(resolve, 1000));
+              continue;
+            }
+            break;
           }
-        } else {
-          lastError = `Model ${model} returned status ${geminiResponse.status}`;
-          console.warn(lastError);
+        } catch (modelErr: any) {
+          lastError = modelErr?.message || 'Request failed';
+          console.warn(`Error with OpenRouter model ${model} on attempt ${attempt + 1}:`, lastError);
+
+          if (attempt < maxRetries) {
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+            continue;
+          }
         }
-      } catch (modelErr: any) {
-        lastError = modelErr?.message || 'Request failed';
-        console.warn(`Error with ${model}:`, lastError);
+      }
+
+      if (assistantReply) {
+        break;
       }
     }
 
